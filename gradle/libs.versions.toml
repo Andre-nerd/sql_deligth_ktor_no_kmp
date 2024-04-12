@@ -24,6 +24,7 @@ junit = { group = "junit", name = "junit", version.ref = "junit" }
 androidx-junit = { group = "androidx.test.ext", name = "junit", version.ref = "junitVersion" }
 androidx-espresso-core = { group = "androidx.test.espresso", name = "espresso-core", version.ref = "espressoCore" }
 androidx-lifecycle-runtime-ktx = { group = "androidx.lifecycle", name = "lifecycle-runtime-ktx", version.ref = "lifecycleRuntimeKtx" }
+androidx-lifecycle-viewmodel-ktx = { group = "androidx.lifecycle", name = "lifecycle-viewmodel-ktx", version.ref = "lifecycleRuntimeKtx" }
 androidx-activity-compose = { group = "androidx.activity", name = "activity-compose", version.ref = "activityCompose" }
 androidx-compose-bom = { group = "androidx.compose", name = "compose-bom", version.ref = "composeBom" }
 androidx-ui = { group = "androidx.compose.ui", name = "ui" }
@@ -38,8 +39,12 @@ squareup-sqlite-driver = {group = "com.squareup.sqldelight", name = "sqlite-driv
 androidx-ktor-client = {group ="io.ktor", name ="ktor-client-android", version.ref ="ktorVersion"}
 androidx-ktor-serialization = {group ="io.ktor", name ="ktor-serialization-kotlinx-json", version.ref ="ktorVersion"}
 koin-insert = {group = "io.insert-koin", name = "koin-android", version.ref ="koinVersion"}
+koin-compose = {group = "io.insert-koin", name = "koin-androidx-compose", version.ref ="koinVersion"}
 androidx-icons-extended = {group = "androidx.compose.material", name = "material-icons-extended-android", version.ref ="iconsExtended"}
 androidx-navigation = {group = "androidx.navigation", name = "navigation-compose", version.ref = "composeNavVersion"}
+
+
+
 
 
 [plugins]

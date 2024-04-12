@@ -12,7 +12,11 @@ import androidx.compose.material3.lightColorScheme
 import androidx.compose.runtime.Composable
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.platform.LocalContext
+import androidx.compose.ui.text.TextStyle
+import androidx.compose.ui.text.font.FontFamily
+import androidx.compose.ui.text.style.TextAlign
 import androidx.compose.ui.unit.dp
+import androidx.compose.ui.unit.sp
 
 private val DarkColorScheme = darkColorScheme(
     primary = Purple80,
@@ -59,4 +63,22 @@ fun Sql_ktor_example_no_kmpTheme(
     )
 }
 
-val modifierMainScreen = Modifier.padding(start = 16.dp, end = 16.dp, top = 32.dp, bottom = 32.dp)
+val modifierMainScreen = Modifier.padding(start = 16.dp,end = 16.dp,top = 32.dp,bottom = 32.dp)
+val styleTitle = TextStyle(
+    fontSize = 14.sp,
+    lineHeight = 48.sp,
+    fontFamily = FontFamily.Monospace,
+    textAlign = TextAlign.Justify
+)
+val styleDescription = TextStyle(
+    fontSize = 12.sp,
+    lineHeight = 18.sp,
+    fontFamily = FontFamily.SansSerif,
+    textAlign = TextAlign.Justify
+)
+val styleAnnotation = TextStyle(
+    fontSize = 10.sp,
+    lineHeight = 18.sp,
+    fontFamily = FontFamily.Monospace,
+    textAlign = TextAlign.Justify
+)

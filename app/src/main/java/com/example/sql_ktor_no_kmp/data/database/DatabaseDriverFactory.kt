@@ -1,4 +1,4 @@
-package com.example.sql_ktor_no_kmp.data
+package com.example.sql_ktor_no_kmp.data.database
 
 import android.content.Context
 import com.example.sql_ktor_no_kmp.Database
@@ -15,7 +15,7 @@ class DatabaseDriverFactory(private val applicationContext:Context) {
         return androidSqlDriver
     }
     companion object{
-        fun createDatabase(factory: DatabaseDriverFactory):Database{
+        fun initDatabase(factory: DatabaseDriverFactory):Database{
             val driver = factory.createDriver()
             val queries = Database(driver)
             val items = queries.itemExampleQueries.selectAll().executeAsList()

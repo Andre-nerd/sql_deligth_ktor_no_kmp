@@ -13,19 +13,20 @@ import androidx.navigation.NavHostController
 import androidx.navigation.compose.NavHost
 import androidx.navigation.compose.composable
 import androidx.navigation.compose.currentBackStackEntryAsState
-
-import com.example.sql_ktor_no_kmp.Database
+import com.example.sql_ktor_no_kmp.presentation.screens.AboutAppScreen
 import com.example.sql_ktor_no_kmp.presentation.screens.DatabaseMonitorScreen
 import com.example.sql_ktor_no_kmp.presentation.screens.KtorMonitorScreen
 
 @Composable
 fun BottomBarNavGraph(
-    navHostController: NavHostController,
-    queries: Database
+    navHostController: NavHostController
 ){
-    NavHost(navController = navHostController, startDestination = BottomBarScreen.DataBaseScreen.route ){
+    NavHost(navController = navHostController, startDestination = BottomBarScreen.AboutAppScreen.route){
+        composable(route = BottomBarScreen.AboutAppScreen.route){
+            AboutAppScreen()
+        }
         composable(route = BottomBarScreen.DataBaseScreen.route){
-            DatabaseMonitorScreen(queries = queries)
+            DatabaseMonitorScreen()
         }
         composable(route = BottomBarScreen.KtorRestScreen.route){
             KtorMonitorScreen()
@@ -50,6 +51,7 @@ fun RowScope.AddItem(
 @Composable
 fun BottomBar(navController: NavHostController) {
     val screens = listOf(
+        BottomBarScreen.AboutAppScreen,
         BottomBarScreen.DataBaseScreen,
         BottomBarScreen.KtorRestScreen
     )

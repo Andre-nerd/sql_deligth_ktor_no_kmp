@@ -1,15 +1,18 @@
-package com.example.sql_ktor_no_kmp.ui.theme
+package com.example.sql_ktor_no_kmp.presentation.ui.theme
 
 import android.app.Activity
 import android.os.Build
 import androidx.compose.foundation.isSystemInDarkTheme
+import androidx.compose.foundation.layout.padding
 import androidx.compose.material3.MaterialTheme
 import androidx.compose.material3.darkColorScheme
 import androidx.compose.material3.dynamicDarkColorScheme
 import androidx.compose.material3.dynamicLightColorScheme
 import androidx.compose.material3.lightColorScheme
 import androidx.compose.runtime.Composable
+import androidx.compose.ui.Modifier
 import androidx.compose.ui.platform.LocalContext
+import androidx.compose.ui.unit.dp
 
 private val DarkColorScheme = darkColorScheme(
     primary = Purple80,
@@ -55,3 +58,5 @@ fun Sql_ktor_example_no_kmpTheme(
       content = content
     )
 }
+
+val modifierMainScreen = Modifier.padding(start = 16.dp, end = 16.dp, top = 32.dp, bottom = 32.dp)

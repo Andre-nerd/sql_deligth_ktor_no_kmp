@@ -61,11 +61,16 @@ dependencies {
     implementation(libs.androidx.ui.graphics)
     implementation(libs.androidx.ui.tooling.preview)
     implementation(libs.androidx.material3)
+    implementation(libs.androidx.icons.extended)
+    //Navigation with Compose
+    implementation(libs.androidx.navigation)
     //SQLDelight
     implementation(libs.squareup.android.driver)
     //Ktor
     implementation(libs.androidx.ktor.client)
     implementation(libs.androidx.ktor.serialization)
+    // Koin for Android
+    implementation (libs.koin.insert)
 
 
     testImplementation(libs.junit)

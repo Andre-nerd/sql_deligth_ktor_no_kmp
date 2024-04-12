@@ -9,9 +9,12 @@ espressoCore = "3.5.1"
 lifecycleRuntimeKtx = "2.7.0"
 activityCompose = "1.8.2"
 composeBom = "2023.08.00"
+composeNavVersion = "2.7.7"
+iconsExtended = "1.6.5"
 ktorVersion = "2.3.7"
 sqlDelightVersion = "1.5.5"
 dateTimeVersion = "0.4"
+koinVersion = "3.5.0"
 path-squareup ="com.squareup.sqldelight:gradle-plugin:$sqlDelightVersion"
 
 [libraries]
@@ -34,6 +37,10 @@ squareup-android-driver = {group = "com.squareup.sqldelight", name = "android-dr
 squareup-sqlite-driver = {group = "com.squareup.sqldelight", name = "sqlite-driver", version.ref ="sqlDelightVersion"}
 androidx-ktor-client = {group ="io.ktor", name ="ktor-client-android", version.ref ="ktorVersion"}
 androidx-ktor-serialization = {group ="io.ktor", name ="ktor-serialization-kotlinx-json", version.ref ="ktorVersion"}
+koin-insert = {group = "io.insert-koin", name = "koin-android", version.ref ="koinVersion"}
+androidx-icons-extended = {group = "androidx.compose.material", name = "material-icons-extended-android", version.ref ="iconsExtended"}
+androidx-navigation = {group = "androidx.navigation", name = "navigation-compose", version.ref = "composeNavVersion"}
+
 
 [plugins]
 android-application = { id = "com.android.application", version.ref = "agp" }

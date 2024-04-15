@@ -35,21 +35,27 @@ androidx-ui-test-manifest = { group = "androidx.compose.ui", name = "ui-test-man
 androidx-ui-test-junit4 = { group = "androidx.compose.ui", name = "ui-test-junit4" }
 androidx-material3 = { group = "androidx.compose.material3", name = "material3" }
 squareup-android-driver = {group = "com.squareup.sqldelight", name = "android-driver", version.ref ="sqlDelightVersion"}
-squareup-sqlite-driver = {group = "com.squareup.sqldelight", name = "sqlite-driver", version.ref ="sqlDelightVersion"}
-androidx-ktor-client = {group ="io.ktor", name ="ktor-client-android", version.ref ="ktorVersion"}
-androidx-ktor-serialization = {group ="io.ktor", name ="ktor-serialization-kotlinx-json", version.ref ="ktorVersion"}
-koin-insert = {group = "io.insert-koin", name = "koin-android", version.ref ="koinVersion"}
-koin-compose = {group = "io.insert-koin", name = "koin-androidx-compose", version.ref ="koinVersion"}
 androidx-icons-extended = {group = "androidx.compose.material", name = "material-icons-extended-android", version.ref ="iconsExtended"}
 androidx-navigation = {group = "androidx.navigation", name = "navigation-compose", version.ref = "composeNavVersion"}
+#SQLDelight
+squareup-sqlite-driver = {group = "com.squareup.sqldelight", name = "sqlite-driver", version.ref ="sqlDelightVersion"}
+#Ktor
+ktor-client = {group ="io.ktor", name ="ktor-client-android", version.ref ="ktorVersion"}
+ktor-serialization = {group ="io.ktor", name ="ktor-serialization-kotlinx-json", version.ref ="ktorVersion"}
+ktor-negotiation = {group = "io.ktor", name = "ktor-client-content-negotiation", version.ref = "ktorVersion"}
+ktor-logging = {group = "io.ktor", name = "ktor-client-logging", version.ref = "ktorVersion"}
 
-
-
-
+#Koin for Android
+koin-insert = {group = "io.insert-koin", name = "koin-android", version.ref ="koinVersion"}
+koin-compose = {group = "io.insert-koin", name = "koin-androidx-compose", version.ref ="koinVersion"}
 
 [plugins]
 android-application = { id = "com.android.application", version.ref = "agp" }
 jetbrains-kotlin-android = { id = "org.jetbrains.kotlin.android", version.ref = "kotlin" }
+#SQLDelight
 squareup-delight = {id ="com.squareup.sqldelight", version.ref = "sqlDelightVersion"}
+#Kotlin serialization
+kotlin_serialization = {id = "org.jetbrains.kotlin.plugin.serialization", version.ref = "kotlin"}
+
 
 

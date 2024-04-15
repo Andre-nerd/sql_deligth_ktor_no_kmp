@@ -43,7 +43,7 @@ fun DatabaseMonitorScreen(dbViewModel: DatabaseViewModel = koinViewModel()) {
     val goods = dbViewModel.items.collectAsState()
     var openDialogAddItem by remember { mutableStateOf(false) }
 
-    Column(modifier = Modifier.padding(bottom = 132.dp), horizontalAlignment = Alignment.CenterHorizontally) {
+    Column(modifier = Modifier.padding(top = 38.dp, bottom = 132.dp), horizontalAlignment = Alignment.CenterHorizontally) {
         Text(text = "DatabaseMonitorScreen")
         Spacer(modifier = Modifier.size(16.dp))
         LazyColumn {

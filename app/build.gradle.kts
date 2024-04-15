@@ -2,6 +2,7 @@ plugins {
     alias(libs.plugins.android.application)
     alias(libs.plugins.jetbrains.kotlin.android)
     alias(libs.plugins.squareup.delight)
+    alias(libs.plugins.kotlin.serialization)
 }
 
 
@@ -68,8 +69,10 @@ dependencies {
     //SQLDelight
     implementation(libs.squareup.android.driver)
     //Ktor
-    implementation(libs.androidx.ktor.client)
-    implementation(libs.androidx.ktor.serialization)
+    implementation(libs.ktor.client)
+    implementation(libs.ktor.serialization)
+    implementation(libs.ktor.negotiation)
+    implementation(libs.ktor.logging)
     // Koin for Android
     implementation (libs.koin.insert)
     implementation((libs.koin.compose))
